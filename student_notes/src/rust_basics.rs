@@ -91,6 +91,24 @@ constants: const X: i32 = 5, etc.
       that the program is running. The name of constant should be SCREAMING_SNAKE_CASE. We will
       cover constants in more detail later.
 
+    */
+// cons def doesn't need to be in function
+pub const MY_CONSTANT_VARIABLE: i32 = 50;
+
+fn variables_func() {
+    let x: i32 = 6;
+    println!("{MY_CONSTANT_VARIABLE}");
+
+    let mut y: f64 = 12.0;
+
+    println!("{y}");
+
+    y = 13.0;
+    println!("{y}");
+}
+
+/*
+
 code comments: //, /* */, etc.
 
     - comments in rust are similar to comments in other languages. They are used to document code.
@@ -108,6 +126,4 @@ You can also disable warnings for the entire file by adding the following line t
 
 // Okay, let's write some basic functions to get a feel for things.
 
-pub fn main() {
-
-}
+pub fn main() {}
