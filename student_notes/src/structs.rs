@@ -45,7 +45,7 @@ pub fn main() {
 
     #[derive(Debug)]
     struct Human {
-        name: String,
+        pub name: String,
         age: i32,
         pets: Vec<Pet>,
     }
@@ -53,6 +53,11 @@ pub fn main() {
     impl Human {
         fn new(name: String, age: i32, pets: Vec<Pet>) -> Self {
             Self { name, age, pets }
+        }
+
+        // Println would consume the variable so add the following line otherwise it destroys the pointer after being called
+        pub fn print(&self) {
+            println! {"Ther person's name is: {}, and age is: {}", self.name, self.age}
         }
     }
 

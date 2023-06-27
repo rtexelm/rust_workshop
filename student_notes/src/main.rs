@@ -1,5 +1,9 @@
 #![allow(unused_imports)]
-mod data_types;
-mod rust_basics; // module import
-mod structs;
+#![allow(dead_code)]
+#![allow(unused_variables)]
+// mod data_types;
+// mod rust_basics; // module import
+// mod structs;
+mod examples;
+
 fn main() {}
