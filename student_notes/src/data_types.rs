@@ -15,7 +15,6 @@ Basic Numeric Types:
       most commonly used ones.
 */
 
-
 /*
 Basic String Types:
 
@@ -59,8 +58,17 @@ Basic String Types:
     It's important to note that the resultant type depends on the method used. Methods like `String::from()`,
     `.to_string()`, and `.to_owned()` produce a `String` type, while string literals (`&str`) are naturally string slices.
 */
+fn strings() {
+    let x: i32 = 5;
 
+    fn num_func(x: &i32) {
+        println!("{x}");
+    }
 
+    num_func(&x);
+
+    println!("{x}")
+}
 
 /*
 Basic Compound Types:
@@ -85,17 +93,13 @@ Basic Compound Types:
         arguments.
 */
 
-
-
 /*
     -   Enum: It is a user-defined type that can contain multiple variants. Enums are useful when
         you want to represent a value that can have different states or options. Each variant
         can have its own associated data.
 */
 
-
 // Associating data to each variant of an enum.
-
 
 /*
     -   Tuple: It is a type that can hold multiple values of different types. Tuples are ordered
@@ -103,8 +107,6 @@ Basic Compound Types:
         than 2-3 values, it is recommended to use a struct instead.
 
 */
-
-
 
 /*
 The option type:
@@ -118,7 +120,6 @@ The option type:
     Useful when needing to work with optional data.
 */
 
-
 /*
 Note on References:
     -   The '&' symbol in front of a type indicates that it is a reference. References are
@@ -128,5 +129,5 @@ Note on References:
 */
 
 pub fn main() {
-
+    strings();
 }

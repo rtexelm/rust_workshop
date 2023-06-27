@@ -93,19 +93,19 @@ constants: const X: i32 = 5, etc.
 
     */
 // cons def doesn't need to be in function
-pub const MY_CONSTANT_VARIABLE: i32 = 50;
+// pub const MY_CONSTANT_VARIABLE: i32 = 50;
 
-fn variables_func() {
-    let x: i32 = 6;
-    println!("{MY_CONSTANT_VARIABLE}");
+// fn variables_func() {
+//     // let x: i32 = 6;
+//     println!("{MY_CONSTANT_VARIABLE}");
 
-    let mut y: f64 = 12.0;
+//     let mut y: f64 = 12.0;
 
-    println!("{y}");
+//     println!("{y}");
 
-    y = 13.0;
-    println!("{y}");
-}
+//     y = 13.0;
+//     println!("{y}");
+// }
 
 /*
 
