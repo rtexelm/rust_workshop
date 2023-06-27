@@ -14,14 +14,12 @@ Named-field structs:
     and named fields. Each field has a type, and its name is used to access the data it contains.
 */
 
-
 /*
 Tuple structs:
 
     These are structs that have fields with types but no names. These fields can be accessed by
     using dot notation along with the index of the field (like tuples).
 */
-
 
 /*
 Unit structs:
@@ -38,8 +36,43 @@ Unit structs:
     struct and then use trait objects of that type.
 */
 
-
-
 pub fn main() {
+    #[derive(Debug)]
+    struct Pet {
+        name: String,
+        pet_type: String,
+    }
 
+    #[derive(Debug)]
+    struct Human {
+        name: String,
+        age: i32,
+        pets: Vec<Pet>,
+    }
+
+    impl Human {
+        fn new(name: String, age: i32, pets: Vec<Pet>) -> Self {
+            Self { name, age, pets }
+        }
+    }
+
+    let baby: Pet = Pet {
+        name: "baby".to_string(),
+        pet_type: "chihuahua".to_owned(),
+    };
+
+    let human: Human = Human {
+        name: String::from("Sir Mittens Catington III"),
+        age: 42,
+        pets: vec![baby],
+    };
+
+    let matilda: Human = Human::new(
+        "matilda cubbins".to_string(),
+        5,
+        vec![Pet {
+            name: "Lisa".to_string(),
+            pet_type: "beta fish".to_string(),
+        }],
+    );
 }
