@@ -36,7 +36,7 @@ fn expr_func() {
     // loop is like a "while true" loop}
 }
 
-fn main() {
+pub fn main() {
     borrow_func();
     move_func();
 }

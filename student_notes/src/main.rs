@@ -4,8 +4,9 @@
 // mod data_types;
 // mod rust_basics; // module import
 // mod structs;
-mod rust_nuances;
+// mod rust_nuances;
 // mod examples;
 // use examples::*;
+mod examples;
 
 fn main() {}
