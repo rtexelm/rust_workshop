@@ -41,7 +41,7 @@ impl fmt::Display for Drink {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(
             f,
-            "Drink: {}, Size: {}, Flavor: {}, Price:: {:.2}",
+            "Drink: {}, Size: {:?}, Flavor: {:?}, Price:: {:.2}",
             self.name, self.size, self.flavor, self.price
         )
     }
