@@ -52,4 +52,6 @@ pub fn main() {
     vec1.sort();
     // removes dups
     vec1.dedup();
+    // Insert
+    vec1.insert(1, 4);
 }
