@@ -8,8 +8,9 @@
 // mod examples;
 // use examples::*;
 // mod examples;
-mod control_flow;
+// mod control_flow;
+mod thursday;
 
 fn main() {
-    control_flow::main();
+    thursday::main();
 }
